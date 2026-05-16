@@ -1,0 +1,12 @@
+# HW 3 - Task 3
+This document is discussing the **Curse of Dimensionality** when dealing with multi-dimensional machine learning models, as discussed in Section 6.4: Considerations in High Dimensions of An Introduction to Statistical Learning (ISLR, 2nd Edition).
+
+## Topic - Curse of Dimensionality
+
+
+## Prompt
+"I am a graduate student in environmental data science who knows about PCA as a way to approach dimensionality in machine learning. When concerning dimensionality in machine learning, I am confused with how KNN reduces performance with many predictors especially when all points because 'equidistant'. Give me a concrete example using a scenerio of KNN failing with multiple predictors for a classification study looking at avian observations. Avoid using more complex terminology."
+
+
+## Reflection
+I prompted the above prompt to Claude AI. From my understanding, a 2D KNN can be used to categorize a bird with two feautres -- wingspand and weight-- and the KNN model can clearly differentiate between the two. However, as you add more predictors -- such as 16 RGB measurements, tail length, bill length, etc. -- making the model multidimensional, the model cannot distiguish between birds especially if a bird is slightly off in color. PCA can be used to collapse predictors into 3 categories. I decided to re-prompt with the question "Explain to me how KNN needs the number of training observations to grow exponentially with each predictor added to maintain the same coverage of the feature space." because that was a question I had after the prompt. This answer was similar to the one in the book, but more specific to my scenario. 
